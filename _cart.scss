@@ -1,0 +1,242 @@
+@keyframes pulse {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+.top_cart{
+    height: 400px;
+    background-image: url(./img-cart/background-cart.jpg);
+    background-size: cover;
+    background-position:center ;
+    background-repeat: no-repeat;
+
+}
+.heading_big{
+font-weight: 600;
+font-size: 64px;
+line-height: 70px;
+color: #FFFFFF;
+padding-top: 126px;
+}
+.cart{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 64px;
+    column-gap: 32px;
+    
+    &_name-box{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+    }
+    &_item{
+        border-top: 0.5px solid #CACDD8;
+        padding-top: 25px;
+        padding-bottom: 32px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &_left{
+        display: flex;
+        gap: 32px;
+    }
+    &_info{
+        width: 276px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }          
+    &_form{
+        background: #F7F6F6;
+        border-radius: 20px;
+        height: 556px;
+        grid-column: span 4;
+        
+    }
+    &_content{
+        grid-column: span 8;
+        column-gap: 32px;
+    }
+    &_link-box{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+    &_link{ 
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 210%;
+        color: #000000;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 83%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size 0.3s;
+        
+    }
+    &_link:hover{
+        background-size: 100% 2px;
+    }
+    &_content_button-box{
+        display: flex;
+        gap: 7px;
+        padding-top: 18px;
+    }
+    &_content-button{
+        width: 200px;
+        height: 37px;
+        border: 1px solid #000000;
+        border-radius: 50px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        background-color: transparent;         
+        text-align: center;
+        color: #000000;
+        transition: .6s;
+    }
+    &_content-button:hover{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        background: #000000;
+        border-radius: 50px;
+        color: #FFFFFF;
+        
+
+    }
+}
+.cart_info{
+        
+    &_name{       
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+    }
+    &_text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #888888;
+    }
+    &_price{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center; 
+        color: #050505;
+    }
+    &_input{
+        width: 71px;
+        height: 51px;
+        background: #F7F6F6;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+        border: transparent;
+        
+    }
+
+}
+.cart_form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 35px;
+        text-align: center;
+        max-width: 379px;
+        min-width: 343px;
+    &_text{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        color: #000000;
+        padding-top: 42px;
+        
+        
+    }
+    &_total-text{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        padding-bottom: 18px;
+    }
+    &_input-box{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 41px;
+        margin-bottom: 64px ;
+        text-align: center;
+        align-items: center;
+
+    }
+    &_input{
+        width: 288px;
+        border: transparent;
+        border-bottom: 1px solid #CACDD8;
+        background-color: transparent;
+        outline: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        &::placeholder{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+        }
+    }
+    
+    &_button{
+        width: 290px;
+        height: 41px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        border: 1px solid #000000;
+        border-radius: 50px;
+        animation: pulse 3s ease-in 1s infinite normal backwards;
+        
+    }
+    &_button:hover{
+        background: #000000;
+        border-radius: 50px;
+        color: #FFFFFF;  
+        
+    }
+
+}
+
