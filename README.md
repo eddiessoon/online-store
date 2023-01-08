@@ -16,4 +16,4 @@
 
 **Ссылка на GitHub-page**
 
-[[Ссылка на проект в GitHub-Pages]](https://)
+[[Ссылка на проект в GitHub-Pages]](https://eddiessoon.github.io/online-store/)
